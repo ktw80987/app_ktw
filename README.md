@@ -1,12 +1,6 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# assignment #1_자기소개 카드 컴포넌트 만들기
+마감 9월 10일 기준 오후 11:59 제출물 유형 웹사이트 URL 또는 파일 업로드
+다음 요구사항에 맞는 자기소개 카드 컴포넌트를 제작하세요.
+1. Props로 받을 정보: - 이름 - 학번 - 전공
+2. State로 관리할 정보: - 좋아요 버튼 클릭 시 숫자 증가
+3. 완성된 결과물을 GitHub에 업로드하세요.
