@@ -5,7 +5,6 @@ export default function ProfileCard({ name, studentId, major }) {
 
   const card = {
     width: 360,
-    margin: "24px auto",
     padding: "20px",
     borderRadius: 16,
     boxShadow: "0 6px 18px rgba(0,0,0,0.08)",
@@ -15,6 +14,7 @@ export default function ProfileCard({ name, studentId, major }) {
 
   const title = { margin: 0, fontSize: 20, fontWeight: 700 };
   const meta = { margin: "12px 0 20px", lineHeight: 1.6, color: "#444" };
+  const actions = { display: "flex", gap: 8 };
   const btn = {
     border: "none",
     padding: "10px 14px",
@@ -32,9 +32,14 @@ export default function ProfileCard({ name, studentId, major }) {
         <div><b>전공:</b> {major}</div>
       </div>
 
-      <button style={btn} onClick={() => setLikes((n) => n + 1)}>
-        👍 좋아요 {likes}
-      </button>
+      <div style={actions}>
+        <button style={btn} onClick={() => setLikes(n => n + 1)}>
+          👍 좋아요 {likes}
+        </button>
+        <button style={btn} onClick={() => setLikes(0)}>
+          ↩ 초기화
+        </button>
+      </div>
     </div>
   );
 }
